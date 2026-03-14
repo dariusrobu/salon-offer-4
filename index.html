@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumière Beauty Studio | Premium Hair Salon</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">LUMIÈRE</div>
+            <div class="nav-links">
+                <a href="#servicii">Servicii</a>
+                <a href="#echipa">Echipa</a>
+                <a href="#rezervari" class="btn-gold">Programare</a>
+            </div>
+            <div class="menu-icon">
+                <i data-lucide="menu"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section: Hero -->
+        <section class="hero" id="hero">
+            <div class="hero-bg-placeholder"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="reveal">Frumusețea</span>
+                    <span class="reveal italic">Esențială.</span>
+                </h1>
+                <p class="hero-subtitle">Redefinim stilul tău într-un spațiu dedicat perfecțiunii.</p>
+                <div class="scroll-indicator">
+                    <span>EXPLOREAZĂ</span>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Services (Horizontal Scroll) -->
+        <section class="services" id="servicii">
+            <div class="section-label">01 / SERVICII</div>
+            <div class="services-wrapper">
+                <div class="services-container">
+                    <div class="service-card large">
+                        <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1560869713-7d0a29430803?q=80&w=1200')"></div>
+                        <div class="service-info">
+                            <h3>Tuns & Styling</h3>
+                            <p>Consultantă personalizată pentru un look care te definește.</p>
+                            <span class="price">de la 150 RON</span>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1522337660859-02fbefad4740?q=80&w=800')"></div>
+                        <div class="service-info">
+                            <h3>Colorare Creativă</h3>
+                            <p>Balayage, Highlights și tehnici moderne de vopsire.</p>
+                            <span class="price">de la 350 RON</span>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=800')"></div>
+                        <div class="service-info">
+                            <h3>Tratamente de Lux</h3>
+                            <p>Hidratare profundă și reconstrucție capilară.</p>
+                            <span class="price">de la 200 RON</span>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1620331311520-246422fd82f9?q=80&w=800')"></div>
+                        <div class="service-info">
+                            <h3>Coafat Eveniment</h3>
+                            <p>Eleganță supremă pentru momentele tale speciale.</p>
+                            <span class="price">de la 250 RON</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Team -->
+        <section class="team" id="echipa">
+            <div class="section-header">
+                <div class="section-label">02 / ECHIPA NOASTRĂ</div>
+                <h2 class="section-title">Maeștrii Stilului</h2>
+            </div>
+            <div class="team-grid">
+                <div class="stylist-card">
+                    <div class="stylist-image" style="background-image: url('https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=600')"></div>
+                    <div class="stylist-details">
+                        <span class="stylist-role">Senior Stylist</span>
+                        <h3>Elena Marinescu</h3>
+                        <p>Specialistă în tehnici de colorare modernă și balayage.</p>
+                    </div>
+                </div>
+                <div class="stylist-card">
+                    <div class="stylist-image" style="background-image: url('https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=600')"></div>
+                    <div class="stylist-details">
+                        <span class="stylist-role">Creative Director</span>
+                        <h3>Adrian Popescu</h3>
+                        <p>Expert în tunsori geometrice și styling avangardist.</p>
+                    </div>
+                </div>
+                <div class="stylist-card">
+                    <div class="stylist-image" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600')"></div>
+                    <div class="stylist-details">
+                        <span class="stylist-role">Master Barber</span>
+                        <h3>Mihai Ionescu</h3>
+                        <p>Dedicat artei tunsului masculin și îngrijirii bărbii.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Booking Flow -->
+        <section class="booking" id="rezervari">
+            <div class="booking-container">
+                <div class="booking-header">
+                    <div class="section-label">03 / PROGRAMĂRI</div>
+                    <h2 class="section-title">Rezervă-ți Experiența</h2>
+                </div>
+                
+                <div class="booking-steps">
+                    <div class="step-indicator active" data-step="1">1. Serviciu</div>
+                    <div class="step-indicator" data-step="2">2. Stilist</div>
+                    <div class="step-indicator" data-step="3">3. Dată & Oră</div>
+                </div>
+
+                <div class="booking-flow">
+                    <!-- Step 1: Services Selection -->
+                    <div class="flow-step active" id="step-1">
+                        <div class="options-grid">
+                            <div class="option-item" data-value="tuns">
+                                <span class="name">Tuns & Styling</span>
+                                <span class="time">60 min</span>
+                                <i data-lucide="chevron-right"></i>
+                            </div>
+                            <div class="option-item" data-value="vopsit">
+                                <span class="name">Vopsit & Colorare</span>
+                                <span class="time">120 min</span>
+                                <i data-lucide="chevron-right"></i>
+                            </div>
+                            <div class="option-item" data-value="tratament">
+                                <span class="name">Tratament Hidratare</span>
+                                <span class="time">45 min</span>
+                                <i data-lucide="chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Stylist Selection -->
+                    <div class="flow-step" id="step-2">
+                        <div class="options-grid">
+                            <div class="option-item" data-value="elena">
+                                <span class="name">Elena Marinescu</span>
+                                <i data-lucide="chevron-right"></i>
+                            </div>
+                            <div class="option-item" data-value="adrian">
+                                <span class="name">Adrian Popescu</span>
+                                <i data-lucide="chevron-right"></i>
+                            </div>
+                            <div class="option-item" data-value="mihai">
+                                <span class="name">Mihai Ionescu</span>
+                                <i data-lucide="chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Time Selection -->
+                    <div class="flow-step" id="step-3">
+                        <div class="time-slots">
+                            <div class="day-picker">
+                                <span class="day active">Luni, 16 Mar</span>
+                                <span class="day">Marți, 17 Mar</span>
+                                <span class="day">Miercuri, 18 Mar</span>
+                            </div>
+                            <div class="slots-grid">
+                                <button class="slot">09:00</button>
+                                <button class="slot">10:30</button>
+                                <button class="slot">13:00</button>
+                                <button class="slot">15:30</button>
+                                <button class="slot">17:00</button>
+                            </div>
+                        </div>
+                        <button class="btn-confirm">CONFIRMĂ REZERVAREA</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Loyalty Program -->
+        <section class="loyalty">
+            <div class="loyalty-content">
+                <div class="section-label">04 / PROGRAM DE LOIALITATE</div>
+                <h2 class="section-title">Lumière Privé</h2>
+                <p>Ești mai mult decât un client, ești parte din comunitatea noastră. Bucură-te de beneficii exclusive la fiecare vizită.</p>
+                <ul class="loyalty-perks">
+                    <li><i data-lucide="star"></i> 10% reducere la a 5-a vizită</li>
+                    <li><i data-lucide="gift"></i> Tratament cadou de ziua ta</li>
+                    <li><i data-lucide="sparkles"></i> Acces prioritar la colecții noi</li>
+                </ul>
+                <button class="btn-outline">ÎNSCRIE-TE ACUM</button>
+            </div>
+            <div class="loyalty-visual">
+                <div class="gold-card-placeholder">
+                    <span class="card-name">LUMIÈRE PRIVÉ</span>
+                    <span class="card-number">**** **** 1234</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Instagram Feed -->
+        <section class="instagram">
+            <div class="section-header-center">
+                <div class="section-label">INSTAGRAM</div>
+                <h2>Inspirație Zilnică @lumiere_salon</h2>
+            </div>
+            <div class="insta-grid">
+                <div class="insta-item"></div>
+                <div class="insta-item"></div>
+                <div class="insta-item"></div>
+                <div class="insta-item"></div>
+                <div class="insta-item"></div>
+                <div class="insta-item"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-info">
+                <div class="logo">LUMIÈRE</div>
+                <p>Strada Primăverii 42, București<br>+40 722 000 000<br>contact@lumiere.ro</p>
+            </div>
+            <div class="footer-links">
+                <h4>Link-uri</h4>
+                <a href="#">Servicii</a>
+                <a href="#">Echipa</a>
+                <a href="#">Politica de Confidențialitate</a>
+            </div>
+            <div class="footer-hours">
+                <h4>Program</h4>
+                <p>L-V: 09:00 - 20:00<br>S: 09:00 - 16:00<br>D: Închis</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Lumière Beauty Studio. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
