@@ -112,6 +112,9 @@ h1, h2, h3 {
     font-size: 1.5rem;
     font-weight: 900;
     letter-spacing: 0.2em;
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 .nav-links {
