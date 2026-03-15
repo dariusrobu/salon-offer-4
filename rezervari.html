@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programări | Lumière Beauty Studio</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="subpage">
+    <header class="header scrolled">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">LUMIÈRE</a>
+            <div class="nav-links">
+                <a href="servicii.html">Servicii</a>
+                <a href="echipa.html">Echipa</a>
+                <a href="contact.html">Contact</a>
+                <a href="rezervari.html" class="btn-gold active">Programare</a>
+            </div>
+            <div class="menu-icon">
+                <i data-lucide="menu"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="section-label">04 / PROGRAMĂRI</div>
+            <h1 class="section-title">Rezervă-ți Experiența</h1>
+        </section>
+
+        <!-- Reuse the booking section from index but adapted for a page -->
+        <section class="booking" id="rezervari" style="padding-top: 5rem;">
+            <div class="booking-container">
+                <div class="booking-steps">
+                    <div class="step-indicator active" data-step="1">1. Serviciu</div>
+                    <div class="step-indicator" data-step="2">2. Stilist</div>
+                    <div class="step-indicator" data-step="3">3. Dată & Oră</div>
+                </div>
+
+                <div class="booking-flow">
+                    <!-- Step 1: Services Selection -->
+                    <div class="flow-step active" id="step-1">
+                        <div class="options-grid">
+                            <div class="option-item" data-value="tuns">
+                                <span class="name">Tuns & Styling</span>
+                                <span class="time">60 min</span>
+                                <i data-lucide="chevron-right"></i>
+                            </div>
+                            <div class="option-item" data-value="vopsit">
+                                <span class="name">Vopsit & Colorare</span>
+                                <span class="time">120 min</span>
+                                <i data-lucide="chevron-right"></i>
+                            </div>
+                            <div class="option-item" data-value="tratament">
+                                <span class="name">Tratament Hidratare</span>
+                                <span class="time">45 min</span>
+                                <i data-lucide="chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Stylist Selection -->
+                    <div class="flow-step" id="step-2">
+                        <div class="options-grid">
+                            <div class="option-item" data-value="elena">
+                                <span class="name">Elena Marinescu</span>
+                                <i data-lucide="chevron-right"></i>
+                            </div>
+                            <div class="option-item" data-value="adrian">
+                                <span class="name">Adrian Popescu</span>
+                                <i data-lucide="chevron-right"></i>
+                            </div>
+                            <div class="option-item" data-value="mihai">
+                                <span class="name">Mihai Ionescu</span>
+                                <i data-lucide="chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Time Selection -->
+                    <div class="flow-step" id="step-3">
+                        <div class="time-slots">
+                            <div class="day-picker">
+                                <span class="day active">Luni, 16 Mar</span>
+                                <span class="day">Marți, 17 Mar</span>
+                                <span class="day">Miercuri, 18 Mar</span>
+                            </div>
+                            <div class="slots-grid">
+                                <button class="slot">09:00</button>
+                                <button class="slot">10:30</button>
+                                <button class="slot">13:00</button>
+                                <button class="slot">15:30</button>
+                                <button class="slot">17:00</button>
+                            </div>
+                        </div>
+                        <button class="btn-confirm">CONFIRMĂ REZERVAREA</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-info">
+                <div class="logo">LUMIÈRE</div>
+                <p>Strada Primăverii 42, București<br>+40 722 000 000<br>contact@lumiere.ro</p>
+            </div>
+            <div class="footer-links">
+                <h4>Link-uri</h4>
+                <a href="servicii.html">Servicii</a>
+                <a href="echipa.html">Echipa</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-hours">
+                <h4>Program</h4>
+                <p>L-V: 09:00 - 20:00<br>S: 09:00 - 16:00<br>D: Închis</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Lumière Beauty Studio. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
