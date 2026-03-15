@@ -33,6 +33,38 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Mobile Menu Toggle
+    const menuIcon = document.querySelector('.menu-icon');
+    const navLinks = document.querySelector('.nav-links');
+    const navLinksItems = document.querySelectorAll('.nav-links a');
+
+    if (menuIcon && navLinks) {
+        menuIcon.addEventListener('click', () => {
+            const isActive = navLinks.classList.toggle('active');
+            document.body.style.overflow = isActive ? 'hidden' : 'auto';
+            
+            // Toggle icon
+            const icon = menuIcon.querySelector('i');
+            const iconName = icon.getAttribute('data-lucide');
+            if (iconName === 'menu') {
+                icon.setAttribute('data-lucide', 'x');
+            } else {
+                icon.setAttribute('data-lucide', 'menu');
+            }
+            lucide.createIcons();
+        });
+
+        navLinksItems.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                document.body.style.overflow = 'auto';
+                const icon = menuIcon.querySelector('i');
+                icon.setAttribute('data-lucide', 'menu');
+                lucide.createIcons();
+            });
+        });
+    }
+
     // Booking Flow Logic
     const steps = document.querySelectorAll('.flow-step');
     const indicators = document.querySelectorAll('.step-indicator');
